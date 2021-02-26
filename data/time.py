@@ -21,5 +21,5 @@ if __name__ == "__main__":
                                     "minute": time_str[4:6]})
                 else:
                     connection.execute(statement,
-                                   {"timekey": f"{time_str[:2]}{time_str[3:5]}", "time": time, "hour": time_str[:2],
+                                   {"timekey": f"0{time_str[:2]}{time_str[3:5]}", "time": time, "hour": f"0{time_str[:2]}",
                                     "minute": time_str[3:5]})
